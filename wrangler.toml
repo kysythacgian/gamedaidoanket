@@ -1,0 +1,26 @@
+name = "dai-doan-ket"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+keep_vars = true
+
+[assets]
+directory = "./public"
+
+[[durable_objects.bindings]]
+name = "ROOM"
+class_name = "Room"
+
+[[durable_objects.bindings]]
+name = "HUB"
+class_name = "Hub"
+
+[vars]
+MAX_ROOMS = "10"   # số phòng (đơn vị) tối đa chơi cùng lúc
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Room"]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = ["Hub"]
