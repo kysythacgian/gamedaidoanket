@@ -1,0 +1,2 @@
+# Sao chép file này thành .dev.vars để chạy thử trên máy (npm run dev). KHÔNG đưa .dev.vars lên GitHub.
+ADMIN_KEY=dat-ma-admin-cua-ban
